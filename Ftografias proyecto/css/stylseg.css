@@ -1,0 +1,42 @@
+
+/*--------------
+Seccion de Imagenes
+------------------*/
+.contenedorimg{
+  background-color: #d5c75f;
+  padding: 3% 5%;
+}
+div img {
+  width: 90%;
+  margin: 5%;
+}
+img[src$='.jpg']
+{
+  box-shadow: 2px 2px #02010a;
+}
+
+.fila {
+display: flex;
+flex-flow: row nowrap;
+}
+.blur {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+.gris {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%)
+}
+.sepia {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+img[src^='../icono'] {
+    width: 30%;
+  }
+@media (max-width: 900px) {
+  .fila {
+    display: flex;
+    flex-flow: column;
+  }
+}
